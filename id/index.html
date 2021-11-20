@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+
+
+    <div class="banner">
+        <!-- topbar -->
+    <section class="topbar py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 m-auto">
+                    <a href="" class="text-white fw-bold text-decoration-none">
+                        LOGO
+                    </a>
+                </div>
+                <div class="col-sm-9 text-end m-auto">
+                    <ul class="list-unstyled m-0 p-0 ms-auto">
+                        <li class="d-inline-block">
+                            <a href="../en/" class="btn linkBtn">
+                                English
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a href="../id/" class="btn linkBtn active">
+                                Indonesian
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content my-5">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1 class="fw-bold text-white">
+                            BMI Calculator
+                        </h1>
+                        <div class="line"></div>
+                        <p class="text-white">
+                            Body Mass Index (BMI) atau yang dikenal dengan Indeks Massa Tubuh (IMT) adalah metode pengukuran lemak tubuh berdasarkan berat dan tinggi badan. Kalkulator BMI tidak secara langsung mendapatkan jumlah lemak tubuh, melainkan untuk mendapatkan estimasi lemak tubuh. Perhitungan BMI dapat membantu seseorang dalam menentukan apakah mereka berada pada berat badan yang sehat atau tidak sehat.
+                        </p>
+                        <p class="text-white">
+                            Hasil kalkulator BMI yang tinggi biasanya menunjukkan bahwa terdapat terlalu banyak lemak di tubuh, sedangkan hasil BMI yang rendah menunjukkan bahwa ada terlalu sedikit lemak di tubuh. Semakin besar skor BMI, semakin besar kemungkinan terkena kondisi medis seperti diabetes, tekanan darah tinggi, atau penyakit jantung. BMI yang sangat rendah, di sisi lain, dapat menyebabkan masalah kesehatan seperti anemia, gangguan atau penurunan fungsi imunologi, dan pengeroposan tulang (osteoporosis).
+                        </p>
+                    </div>
+                    <div class="col-md-3 text-end">
+                        <img src="../img/hero.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- topbar -->
+    </div>
+
+
+    <!-- about -->
+    <section class="about py-4 bg-light">
+        <div class="container">
+            <h3 class="text-dark fw-bold">
+                Bagaimana cara menghitung BMI?
+            </h3>
+            <p>
+                Body Mass Index (BMI) seseorang dapat ditentukan dengan mengambil berat badan mereka dalam kilogram dan membaginya dengan kuadrat tinggi badan mereka dalam satuan meter.
+            </p>
+            <p class="text-primary">
+                BMI = berat badan (kg) / tinggi badan^2
+            </p>
+            <p>
+                Organisasi Kesehatan Dunia (WHO) telah mengeluarkan rekomendasi berikut untuk tingkat BMI optimal untuk orang dewasa (pria dan wanita di atas usia 18 tahun):
+            </p>
+            <p>
+                • Kurang berat badan: kurang dari 18,5 <br>
+                • Standar: 18,5 - 25 <br>
+                • Kegemukan: 25 - 30 <br>
+                • Obesitas: lebih dari 30
+
+            </p>
+            <p>
+                Namun, kisaran nilai BMI bervariasi dari orang ke orang dan dipengaruhi oleh variabel seperti keturunan, etnis, jenis kelamin, dan berbagai faktor lainnya.
+            </p>
+            <p>
+                Sebagian besar kalkulator BMI menyediakan kategori untuk membantu menjelaskan hasil yang di dapat. Biarpun BMI dihitung dengan cara yang sama untuk semua orang, arti dari hasil kalkulator BMI akan berbeda untuk anak-anak, remaja, dan orang dewasa.
+            </p>
+
+            <h3 class="text-dark fw-bold">
+                Apa kekurangan menggunakan Kalkulator BMI?
+            </h3>
+            <p>
+                Meskipun kalkulator BMI digunakan untuk mengkategorikan orang dewasa dan anak-anak untuk obesitas, ia memiliki keterbatasan. Kalkulator BMI tidak akurat jika digunakan pada atlet dan orang-orang dengan tubuh yang sangat berotot. Hal ini juga tidak akurat dalam menghitung jumlah lemak tubuh pada mereka yang kehilangan massa otot akibat penyakit atau penurunan berat badan yang tiba-tiba, serta pada orang dewasa lanjut usia
+            </p>
+            
+        </div>
+    </section>
+    <!-- about -->
+
+    <!-- body part -->
+    <section class="bodyPart py-4 position-relative">
+        <img src="../img/pin.png" class="img-fluid pinImg" alt="">
+        <div class="container">
+            <h3 class="text-dark fw-bold">
+                Calculate Your BMI
+            </h3>
+            <div class="row">
+                <div class="col-md-6 p-3">
+                    <form action="">
+                        <div class="v-mid">
+                            <span class="state active imp">Imperial</span>
+                        <label class="switch mx-3">
+                            <input type="checkbox" checked="">
+                            <span class="slider round"></span>
+                          </label>
+                          <span class="state met">Metric</span>
+                        </div>
+
+                        <div class="gender mt-3">
+                            <input type="radio" class="genr" name="gen" id="male">
+                            <label for="male" class="genderBtn btn active">
+                                <i class="fa fa-mars"></i>
+                                <p class="mb-0">Male</p>
+                            </label>
+                            
+                            <input type="radio" class="genr" name="gen" id="female">
+                            <label for="female" class="genderBtn btn">
+                                <i class="fa fa-venus"></i>
+                                <p class="mb-0">Female</p>
+                            </label>
+                        </div>
+
+                        <label for="" class="mt-3 mb-2">How much do you weigh?</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="" id="weight">
+                           <button class="btn disabled btn-light">lb</button>
+                        </div>
+
+                        <label for="" class="mt-3">How tall are you?</label>
+                        <div class="row">
+                            <div class="col-6 p-2">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="" id="feet">
+                                <button class="btn disabled btn-light">ft</button>
+                                </div>
+                            </div>
+                            <div class="col-6 p-2">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="" id="inch">
+                                <button class="btn disabled btn-light">in</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btns">
+                            <button class="btn resetBtn btn-light">
+                                Reset
+                            </button>
+                            <button class="btn calculateBtn btn-grad">
+                                Calculate
+                            </button>
+                        </div>
+
+                        <div class="result mt-4">
+                            <h3 class="resultValue">
+                                Your BMR is: <span id="myResult">28.34</span>
+                            </h3>
+
+                            <table class="table mb-0 mt-4">
+                                <tr>
+                                    <td class="text-center border-0">
+                                        Weight Category
+                                    </td>
+                                    <td class="text-center border-0">
+                                        BMI Range
+                                    </td>
+                                </tr>
+                                <tr class="stage stage1">
+                                    <td class="text-center border-0">
+                                        Underweight
+                                    </td>
+                                    <td class="text-center border-0">
+                                        &lt;18.5
+                                    </td>
+                                </tr>
+                                <tr class="stage stage2">
+                                    <td class="text-center border-0">
+                                        Normal Weight
+                                    </td>
+                                    <td class="text-center border-0">
+                                        18.5 - 24.9
+                                    </td>
+                                </tr>
+                                <tr class="stage stage3">
+                                    <td class="text-center border-0">
+                                        Overweight
+                                    </td>
+                                    <td class="text-center border-0">
+                                        25 - 29.9
+                                    </td>
+                                </tr>
+                                <tr class="stage stage4">
+                                    <td class="text-center border-0">
+                                        Level I Obesity
+                                    </td>
+                                    <td class="text-center border-0">
+                                        30 - 34.9
+                                    </td>
+                                </tr>
+                                <tr class="stage stage5">
+                                    <td class="text-center border-0">
+                                        Level II Obesity
+                                    </td>
+                                    <td class="text-center border-0">
+                                        25 - 39.9
+                                    </td>
+                                </tr>
+                                <tr class="stage stage6">
+                                    <td class="text-center border-0">
+                                        Level III Obesity
+                                    </td>
+                                    <td class="text-center border-0">
+                                        >40
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 text-end ms-auto p-3">
+                    <div class="card border-0 shadow">
+                        <img src="../img/fit (1).jpg" class="img-fluid card-img-top" alt="">
+                    </div>
+                    <div class="card border-0 shadow mt-3">
+                        <img src="../img/fit (2).jpg" class="img-fluid card-img-top" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- body part -->
+
+    <!-- result -->
+    <section class="bottom py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 p-2">
+                    <h3 class="text-dark fw-bold">
+                        Apakah kalkulator BMI dapat diandalkan?
+                    </h3>
+                    <p>
+                        Biarpun kalkulator BMI merupakan prediktor yang bagus untuk kesehatan dan tingkat lemak tubuh, hasilnya tidak 100 persen akurat dalam mengukur jumlah lemak di tubuh Kamu. Banyak profesional medis telah menentang penggunaan BMI dan lebih mengacu kepada metode pengukuran lingkar pinggang karena lebih akurat sebagai faktor penentu utama kondisi obesitas.
+                    </p>
+                </div>
+                <div class="col-md-6 p-2">
+                    <div class="card border-0 bg-transparent">
+                        <img src="../img/banner.jpg" class="img-fluid card-img-top rounded" alt="">
+                    </div>
+                </div>
+            </div>
+            <p class="mt-4 mb-0">
+                Inilah sebabnya, untuk menjamin kebugaran dan kesehatan Kamu secara keseluruhan, penting untuk mengikuti jadwal latihan yang teratur, makan makanan yang seimbang, minum banyak air agar tetap terhidrasi, dan menjaga pola tidur yang baik.
+            </p>
+        </div>
+    </section>
+    <!-- result -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- main js -->
+    <script src="../js/main.js"></script>
+
+  </body>
+</html>

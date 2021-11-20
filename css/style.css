@@ -1,0 +1,246 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.banner {
+	background: linear-gradient(90deg,#2F73C5,#663BB7);
+	border-radius: 0 0 50px 50px;
+}
+.btn.linkBtn {
+	background: #FFFFFF;
+	width: 130px;
+	border-radius: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+li{
+    white-space: nowrap;
+}
+.list-unstyled.m-0.p-0.ms-auto {
+	display: inline-flex;
+	justify-content: flex-end;
+	align-items: center;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.btn.linkBtn.active{
+    background-color: #FCC12C;
+}
+.btn:focus{
+    outline: unset !important;
+    box-shadow: unset !important;
+}
+.form-control:focus{
+    outline: unset !important;
+    box-shadow: unset !important;
+}
+.line{
+    width: 100px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #C3D4ED;
+    margin: 10px 0;
+}
+
+/* switch */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 46px;
+	height: 20px;
+}
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #F0F0F0;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+  .slider::before {
+	position: absolute;
+	content: "";
+	height: 20px;
+	width: 20px;
+	left: 0;
+	bottom: 0;
+	background-color: #FCC12C;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  input:focus{
+      outline: unset !important;
+      box-shadow: unset !important;
+      border: unset !important;
+  }
+  .v-mid {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.genderBtn.btn {
+	border: 2px solid #B8B4AC;
+	padding: 25px 40px;
+	border-radius: 15px;
+	margin-right: 10px;
+	width: 150px;
+}
+.genderBtn.btn.active{
+    background-color: #FFF8E9;
+}
+.genr{
+    display: none;
+}
+.state {
+	color: #929497;
+}
+.state.active {
+	color: #000;
+}
+.input-group button{
+    background-color: #F3F4FF !important;
+}
+.input-group {
+	border: 2px solid #B8B4AC;
+	border-radius: 10px !important;
+	overflow: hidden !important;
+	height: 50px;
+	/* padding: 10px; */
+}
+.input-group input {
+	border: unset;
+	border-right: 2px solid #B8B4AC !important;
+}
+.input-group .btn.disabled.btn-light {
+	width: 50px;
+}
+.btns .btn {
+	width: 150px;
+	margin-top: 20px;
+	border-radius: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* margin-right: 10px; */
+}
+.btns .btn.btn-light {
+	background: #F3F4FF !important;
+	border-color: #B8B4AC;
+	width: 48%;
+}
+.btn.btn-grad {
+	background: linear-gradient(90deg,#F0D750,#EF994A);
+	width: 48%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.btns {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.pinImg{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.resultValue {
+	/* display: inline-block; */
+    text-align: center;
+	background: #FFF8E9;
+	padding: 10px;
+	border-radius: 10px;
+	margin-top: 20px !important;
+}
+.stage.active {
+	background: #FFF8E9;
+}
+.bottom.py-5.bg-light {
+	background: #F3FCFF !important;
+}
+.bottom.py-5.bg-light p {
+	font-size: 18px;
+	line-height: 2;
+}
+.img-fluid.card-img-top.rounded {
+	border-radius: 30px !important;
+}
+h4.fw-bold {
+	line-height: 1.5;
+}
+.result{
+    display: none;
+}
+
+@media screen and (max-width:767px){
+    .topbar.py-4 {
+        text-align: center !important;
+    }
+    .col-sm-9.text-end.m-auto {
+        text-align: center !important;
+        margin-top: 10px !important;
+    }
+    .line {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .col-md-3.text-end {
+        text-align: center !important;
+    }
+    .banner {
+        background: linear-gradient(180deg,#2F73C5,#663BB7);
+        border-radius: 0 0 50px 50px;
+    }
+    .gender.mt-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .genderBtn.btn {
+        border: 2px solid #B8B4AC;
+        padding: 25px 40px;
+        border-radius: 15px;
+        margin-right: 0;
+        width: 150px;
+    }
+    .bottom.py-5.bg-light p {
+        font-size: 16px;
+        line-height: 2;
+    }
+}
