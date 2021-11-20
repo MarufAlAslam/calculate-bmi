@@ -210,6 +210,9 @@ h4.fw-bold {
 }
 
 @media screen and (max-width:767px){
+    .pinImg{
+        display: none;
+    }
     .topbar.py-4 {
         text-align: center !important;
     }
